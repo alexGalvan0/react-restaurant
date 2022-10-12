@@ -35,7 +35,7 @@ export default function App(){
             <Button text='Lunch' handleClick={setType}/>
             <Button text='Dinner' handleClick={setType}/>
             <Button text='Dessert' handleClick={setType}/>
-            {filteredMenu.map((d) => <Card key={d.title} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
+            {filteredMenu.map((d) => <Card key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
             </div>
           </div>
         </div>
