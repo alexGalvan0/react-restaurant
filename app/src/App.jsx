@@ -32,13 +32,15 @@ export default function App(){
         <div className="App container-fluid text-center">
           <Header />
           
-            <div className="col text-center"style={{height:"100vh"}}>
-            <Button text='Breakfast' handleClick={setType} />
-            <Button text='Lunch' handleClick={setType}/>
-            <Button text='Dinner' handleClick={setType}/>
-            <Button text='Dessert' handleClick={setType}/>
-            <div className="d-flex justify-content-center">
-            <div className="row">
+            <div className="col text-center "style={{height:"100vh"}}>
+              <div className="pb-2">
+              <Button text='Breakfast' handleClick={setType} />
+              <Button text='Lunch' handleClick={setType}/>
+              <Button text='Dinner' handleClick={setType}/>
+              <Button text='Dessert' handleClick={setType}/>
+              </div>
+            <div className="text-center pb-2">
+            <div className="row justify-content-center">
               {filteredMenu.map((d) => <Card key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
             </div>
             </div>
