@@ -23,9 +23,11 @@ export default function App(){
           })
       }, []);
 
-      const filteredMenu = data.filter((item) =>{
+      const filteredMenu= data.filter((item) =>{
         return item.category.title == type
       })
+      //Decrease Menu Amounts to 10 items per category
+      let filLowerMen= filteredMenu.slice(0,9)
 
     if (data.length === 0) return (
           <>
@@ -50,8 +52,8 @@ export default function App(){
               <Button text='Dessert' handleClick={setType}/>
               </div>
             <div className="text-center pb-2">
-            <div className="row justify-content-center">
-              {filteredMenu.map((d) => <Card key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
+            <div className="row justify-content-center gap-2">
+              {filLowerMen.map((d) => <Card key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
             </div>
             </div>
           </div>
