@@ -89,8 +89,8 @@ export default function App() {
             />
           ))}
         </div>
+        <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 }
