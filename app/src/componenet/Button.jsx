@@ -1,10 +1,15 @@
- export default function Button({text, handleClick}){
+
+
+export default function Button({text, handleClick,image,className}){
 const click = () => {
   handleClick(text)
 }
     return(
-      <div className="btn-group" role="group" aria-label="Basic example">
-        <button onClick={click} type="button" className="btn btn-primary">{text}</button>
-      </div>
+
+        <div className="col-xl-2">
+          <img className="img-fluid ratio-2x2"aria-disabled="true" src={image} onClick={click}/>
+          <h3>{text}</h3>
+        </div>
+
     )
 }
