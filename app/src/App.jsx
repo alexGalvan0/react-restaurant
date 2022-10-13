@@ -7,6 +7,7 @@ import Button from "./componenet/Button";
 import Spinner from "./componenet/Spinner";
 import Header from "./componenet/Header";
 import Nav from "./componenet/Nav";
+import Footer from "./componenet/Footer";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -71,13 +72,13 @@ export default function App() {
 
           <Button
             image={
-              "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1078&q=80"
+              "https://as1.ftcdn.net/v2/jpg/03/01/97/86/1000_F_301978652_O0aPwap1JaEVaAhj3mIlbqNnJGmRyCzC.jpg"
             }
             text="Dessert"
             handleClick={setType}
           />
         </div>
-        <div className="row d-flex justify-content-center gap-2">
+        <div className="row d-flex justify-content-center gap-2 p-5 m-5">
           {filLowerMen.map((d) => (
             <Card
               key={d.id}
@@ -88,6 +89,7 @@ export default function App() {
             />
           ))}
         </div>
+        <Footer/>
       </div>
     </div>
   );
