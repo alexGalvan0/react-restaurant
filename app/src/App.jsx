@@ -7,6 +7,7 @@ import Button from "./componenet/Button";
 import Spinner from "./componenet/Spinner";
 import Header from "./componenet/Header";
 import Nav from "./componenet/Nav";
+import Footer from "./componenet/Footer";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -89,6 +90,7 @@ export default function App() {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
+import'./button.css'
 
-
-export default function Button({text, handleClick,image,className}){
+export default function Button({text, handleClick,image}){
 const click = () => {
   handleClick(text)
 }
