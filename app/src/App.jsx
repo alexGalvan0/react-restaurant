@@ -7,6 +7,7 @@ import Card from "./componenet/Card";
 import Button from "./componenet/Button";
 import Spinner from "./componenet/Spinner";
 import Header from "./componenet/Header"
+import Nav from "./componenet/Nav";
 
 export default function App(){
 
@@ -26,10 +27,14 @@ export default function App(){
         return item.category.title == type
       })
 
-    if (data.length === 0) return <Spinner />
+    if (data.length === 0) return (<>
+                                    <Nav/>
+                                  <Spinner />
+                                  </>)
 
     return(
         <div className="App container-fluid text-center">
+          <Nav />
           <Header />
           
             <div className="col text-center "style={{height:"100vh"}}>
