@@ -12,7 +12,7 @@ import Nav from "./componenet/Nav";
 export default function App(){
 
     const [data, setData] = useState([]);
-    const [type, setType] = useState('Breakfast');
+    const [type, setType] = useState('');
 
     const url = 'https://astute-baton-362318.ue.r.appspot.com/api/json/'
 
@@ -27,10 +27,15 @@ export default function App(){
         return item.category.title == type
       })
 
-    if (data.length === 0) return (<>
-                                    <Nav/>
-                                  <Spinner />
-                                  </>)
+    if (data.length === 0) return (
+          <>
+            <div className="App container-fluid text-center">
+                <Nav />
+                <Header />
+                <Spinner />
+            </div>
+          </>
+        )
 
     return(
         <div className="App container-fluid text-center">
