@@ -53,7 +53,7 @@ export default function App(){
               </div>
             <div className="text-center pb-2">
             <div className="row justify-content-center gap-2">
-              {filLowerMen.map((d) => <Card key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
+              {filLowerMen.map((d) => <Card  data = {data} key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
             </div>
             </div>
           </div>

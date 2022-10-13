@@ -1,7 +1,7 @@
 import './card.css'
 import Modal from './Modal'
 
-function Card({ title, description,price,category }){
+function Card({ title, description,price,category,}){
     return(
         <div className="card" style={{width:"18rem"}}>
             <div className="card-body">
@@ -10,7 +10,7 @@ function Card({ title, description,price,category }){
                 <p className="Card-text"><em>{category}</em></p>
                 <p className="Card-text"><strong>{price}</strong></p>
 
-                <Modal />
+                <Modal  modalDescription={description} modalTitle = {title} />
 
             </div>
         </div>
