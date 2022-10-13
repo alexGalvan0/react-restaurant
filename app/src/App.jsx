@@ -45,9 +45,11 @@ export default function App(){
           <Nav />
           <Header />
           
-            <div className="col-fluid text-center "style={{height:"100vh"}}>
-              <div className="d-flex justify-content-center flex-col">
+            <div className="col text-center "style={{height:"100vh"}}>
+            <div className="text-center pb-2 ">
+            <div className="row justify-content-center gap-2">
 
+              <div className="d-flex justify-content-center">
               <Button 
                 image={'https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'}
                 text='Breakfast' 
@@ -70,10 +72,8 @@ export default function App(){
                 text='Dessert' 
                 handleClick={setType}
               />
-
               </div>
-            <div className="text-center pb-2">
-            <div className="row justify-content-center gap-2">
+
               {filLowerMen.map((d) => <Card  key={d.id} title={d.title} category={d.category.title} description={d.description} price={'$'+d.price} />)}
             </div>
             </div>
