@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 import Card from "./componenet/Card";
-import Button from "./componenet/Button";
+import Selector from "./componenet/Selector";
 import Spinner from "./componenet/Spinner";
 import Header from "./componenet/Header";
 import Nav from "./componenet/Nav";
@@ -45,7 +45,7 @@ export default function App() {
 
       <div className="col text-center pb-2" style={{ height: "100vh" }}>
         <div className="row justify-content-center gap-2">
-          <Button
+          <Selector
             className="gap-2"
             image={
               "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
@@ -54,7 +54,7 @@ export default function App() {
             handleClick={setType}
           />
 
-          <Button
+          <Selector
             image={
               "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             }
@@ -62,7 +62,7 @@ export default function App() {
             handleClick={setType}
           />
 
-          <Button
+          <Selector
             image={
               "https://images.unsplash.com/photo-1536392706976-e486e2ba97af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             }
@@ -70,7 +70,7 @@ export default function App() {
             handleClick={setType}
           />
 
-          <Button
+          <Selector
             image={
               "https://as1.ftcdn.net/v2/jpg/03/01/97/86/1000_F_301978652_O0aPwap1JaEVaAhj3mIlbqNnJGmRyCzC.jpg"
             }
