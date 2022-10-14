@@ -3,7 +3,7 @@ function Footer() {
     <footer className="text-muted py-5" style={{backgroundColor:'whitesmoke'}}>
       <div className="container d-flex justify-content-center flex-column">
         <p className="float-end mb-1">
-          <a href="https://google.com">Back to top</a>
+          <a href="#">Back to top</a>
         </p>
         <p className="mb-1">
         E Main St, Lexington, KY 40507
