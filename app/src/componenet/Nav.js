@@ -2,7 +2,7 @@ function Nav(){
     return(
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="https://google.com"><img src="https://cdn.worldvectorlogo.com/logos/friendly-s-restaurant.svg"/></a>
+                <a className="navbar-brand" href="https://google.com"><img src="https://cdn.worldvectorlogo.com/logos/friendly-s-restaurant.svg" alt="friendly logo"/></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="https://google.comnavbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -17,9 +17,7 @@ function Nav(){
                     <li className="nav-item">
                     <a className="nav-link" href="https://google.com">Pricing</a>
                     </li>
-                    <li className="nav-item">
-                    <a className="nav-link disabled">Disabled</a>
-                    </li>
+
                 </ul>
                 </div>
             </div>

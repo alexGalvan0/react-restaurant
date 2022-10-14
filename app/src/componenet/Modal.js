@@ -5,7 +5,7 @@ function Modal({ modalTitle, modalDescription,id }) {
       {/* button */}
       <button
         type="button"
-        className="btn btn-dark"
+        className="btn btn-dark btn-sm"
         data-bs-toggle="modal"
         data-bs-target={"#staticBackdropLabel"+id}
       >
