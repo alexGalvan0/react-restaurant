@@ -77,6 +77,7 @@ export default function App() {
             handleClick={setType}
           />
         </div>
+        <h1>{type}</h1>
         <div className="row d-flex justify-content-center gap-2 p-5 m-5">
           {filLowerMen.map((d,i) => (
             <Card
