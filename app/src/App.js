@@ -77,8 +77,8 @@ export default function App() {
             handleClick={setType}
           />
         </div>
-        <h1>{type}</h1>
-        <div className="row d-flex justify-content-center gap-2 p-5 m-5">
+        <h6 class="display-6 pt-5">{type}</h6>
+        <div className="row d-flex justify-content-center gap-2">
           {filLowerMen.map((d,i) => (
             <Card
               iterable={i}
