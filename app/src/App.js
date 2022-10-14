@@ -37,7 +37,6 @@ export default function App() {
         </div>
       </>
     );
-
   return (
     <div className="App container-fluid text-center">
       <Nav />
@@ -79,8 +78,10 @@ export default function App() {
           />
         </div>
         <div className="row d-flex justify-content-center gap-2 p-5 m-5">
-          {filLowerMen.map((d) => (
+          {filLowerMen.map((d,i) => (
             <Card
+              iterable={i}
+              data={filLowerMen}
               key={d.id}
               title={d.title}
               category={d.category.title}

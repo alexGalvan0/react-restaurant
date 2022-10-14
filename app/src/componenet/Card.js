@@ -1,6 +1,7 @@
 import Modal from "./Modal";
 
-function Card({ title, description, price, category }) {
+function Card({ title, description, price, category,data,iterable }) {
+console.log(data[iterable].id)
   return (
 
     <div className="card col-4 " style={{ width: "18rem" }}>
@@ -14,7 +15,7 @@ function Card({ title, description, price, category }) {
           <strong>{price}</strong>
         </p>
 
-        <Modal modalDescription={description} modalTitle={title} />
+        <Modal modalDescription={description} id={data[iterable].id} modalTitle={title} />
       </div>
     </div>
   );
