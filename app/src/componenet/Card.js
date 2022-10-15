@@ -1,7 +1,6 @@
 import Modal from "./Modal";
 
 function Card({ title, description, price, category,data,iterable }) {
-console.log(data[iterable].id)
   return (
 
     <div className="card col-4 " style={{ width: "18rem" }}>

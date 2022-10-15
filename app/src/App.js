@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import dayjs from 'dayjs'
 import "./App.css";
 
 import Card from "./componenet/Card";
@@ -10,16 +11,30 @@ import Nav from "./componenet/Nav";
 import Footer from "./componenet/Footer";
 
 export default function App() {
+
   const [data, setData] = useState([]);
   const [type, setType] = useState("");
 
-  const url = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
 
+
+
+  const url = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
+  
   useEffect(() => {
+    const hour = dayjs().hour()
+    if(hour<10){
+      setType('Breakfast')
+    } else if (hour > 10 && hour < 17){
+      setType('Lunch')
+    } else{
+      setType('Dinner')
+    }
+
     axios.get(url).then((resp) => {
       setData(resp.data);
     });
   }, []);
+
 
   const filteredMenu = data.filter((item) => {
     return item.category.title === type;
@@ -37,11 +52,11 @@ export default function App() {
         </div>
       </>
     );
+
   return (
     <div className="App container-fluid text-center">
       <Nav />
       <Header />
-
       <div className="col text-center pb-2" style={{ height: "100vh" }}>
         <div className="row justify-content-center gap-2">
           <Selector
@@ -77,7 +92,8 @@ export default function App() {
             handleClick={setType}
           />
         </div>
-        <div className="row d-flex justify-content-center gap-2 p-5 m-5">
+        <h6 id='menuCard' className="display-6 pt-5">{type}</h6>
+        <div className="row d-flex justify-content-center gap-2 mb-5">
           {filLowerMen.map((d,i) => (
             <Card
               iterable={i}
