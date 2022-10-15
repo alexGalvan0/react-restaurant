@@ -7,6 +7,7 @@ export default function Selector({ text, handleClick, image }) {
   
   return (
     <div className="col-lg-2 col-md-4">
+      <a href="#menuCard" className="text-dark">
       <img
         style={{ cursor: "pointer" }}
         className="img-fluid ratio-2x2 rounded"
@@ -15,6 +16,7 @@ export default function Selector({ text, handleClick, image }) {
         alt="food-pic"
       />
       <h3 style={{ fontWeight: "bolder" }}>{text}</h3>
+      </a>
     </div>
   );
 }
