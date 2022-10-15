@@ -41,7 +41,6 @@ export default function App() {
     <div className="App container-fluid text-center">
       <Nav />
       <Header />
-
       <div className="col text-center pb-2" style={{ height: "100vh" }}>
         <div className="row justify-content-center gap-2">
           <Selector
@@ -77,7 +76,7 @@ export default function App() {
             handleClick={setType}
           />
         </div>
-        <h6 className="display-6 pt-5">{type}</h6>
+        <h6 id='menuCard' className="display-6 pt-5">{type}</h6>
         <div className="row d-flex justify-content-center gap-2 mb-5">
           {filLowerMen.map((d,i) => (
             <Card
