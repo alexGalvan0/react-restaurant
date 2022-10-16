@@ -96,6 +96,7 @@ export default function App() {
         <div className="row d-flex justify-content-center gap-2 mb-5">
           {filLowerMen.map((d,i) => (
             <Card
+              pepper={'🌶'}
               iterable={i}
               data={filLowerMen}
               key={d.id}
