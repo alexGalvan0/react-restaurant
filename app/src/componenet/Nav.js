@@ -1,3 +1,4 @@
+import Cart from "./Cart"
 function Nav(){
     return(
         <nav className="navbar navbar-expand-lg bg-light">
@@ -15,7 +16,7 @@ function Nav(){
                     <a className="nav-link" href="https://google.com">Features</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="https://google.com">Pricing</a>
+                    <Cart/>
                     </li>
 
                 </ul>
