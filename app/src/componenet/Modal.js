@@ -1,5 +1,4 @@
-function Modal({ modalTitle, modalDescription,id }) {
-
+function Modal({ modalTitle, modalDescription, id }) {
   return (
     <>
       {/* button */}
@@ -7,7 +6,7 @@ function Modal({ modalTitle, modalDescription,id }) {
         type="button"
         className="btn btn-dark btn-sm"
         data-bs-toggle="modal"
-        data-bs-target={"#staticBackdropLabel"+id}
+        data-bs-target={"#staticBackdropLabel" + id}
       >
         Description
       </button>
@@ -15,20 +14,20 @@ function Modal({ modalTitle, modalDescription,id }) {
       {/* modal */}
       <div
         className="modal fade"
-        id={"staticBackdropLabel"+id}
+        id={"staticBackdropLabel" + id}
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabIndex="-1"
-        aria-labelledby={"staticBackdropLabel"+id}
+        aria-labelledby={"staticBackdropLabel" + id}
         aria-hidden="true"
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id={"staticBackdropLabel"+id}>
+              <h1 className="modal-title fs-5" id={"staticBackdropLabel" + id}>
                 {modalTitle}
               </h1>
-              
+
               <button
                 type="button"
                 className="btn-close"
