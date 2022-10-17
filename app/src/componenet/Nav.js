@@ -1,7 +1,7 @@
 
 function Nav(){
     return(
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg bg-light sticky-top">
             <div className="container-fluid">
             <a className="navbar-brand" href="https://google.com"><img src="https://cdn.worldvectorlogo.com/logos/friendly-s-restaurant.svg" alt="friendly logo"/></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
