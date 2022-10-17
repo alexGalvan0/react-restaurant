@@ -1,4 +1,5 @@
 import Modal from "./Modal";
+import Checkout from './Checkout'
 import React,{useState} from 'react'
 
 function Card({ title, description, price, category,data,iterable }) {
@@ -9,10 +10,9 @@ let peppers = '🌶'.repeat(spiceLevel)
 let [addBtn, setAddBtn] = useState('Add to cart')
 let addedToCart = () =>{
   setAddBtn(addBtn=='Add to cart' ? 'Remove From Cart' : 'Add to cart')
-}
-
-
   
+  return addBtn == 'Add to cart' ? console.log({title}) : null;
+}
   return (
 
     <div className="card col-4 " style={{ width: "18rem" }}>
