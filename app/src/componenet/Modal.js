@@ -38,7 +38,6 @@ function Modal({ modalTitle, modalDescription,id }) {
             </div>
             <div className="modal-body">
               <p>{modalDescription}</p>
-              <button type="button" class="btn btn-danger btn-sm">Add to Cart</button>
             </div>
             <div className="modal-footer">
               <button

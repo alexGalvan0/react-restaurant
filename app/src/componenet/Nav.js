@@ -1,4 +1,4 @@
-import Cart from "./Cart"
+
 function Nav(){
     return(
             <nav className="navbar navbar-expand-lg bg-light">
@@ -15,7 +15,7 @@ function Nav(){
                     <li className="nav-item">
                     <a className="nav-link" href="#">Features</a>
                     </li>
-                    <Cart />
+                    
                 </ul>
                 </div>
             </div>
