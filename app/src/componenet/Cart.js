@@ -3,7 +3,7 @@ export default function Cart() {
     <>
       <button
         type="button"
-        className="btn btn-dark btn-sm"
+        className="btn btn-danger mt-1 btn-sm"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
@@ -13,7 +13,7 @@ export default function Cart() {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >

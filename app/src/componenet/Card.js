@@ -1,9 +1,16 @@
 import Modal from "./Modal";
+import React,{useState} from 'react'
 
 function Card({ title, description, price, category,data,iterable }) {
-let spiceLevel = data[iterable].spicy_level
 
+let spiceLevel = data[iterable].spicy_level
 let peppers = '🌶'.repeat(spiceLevel)
+
+let [addBtn, setAddBtn] = useState(false)
+let addedToCart = () =>{
+  setAddBtn(addBtn => !addBtn)
+}
+
 
   
   return (
@@ -20,7 +27,7 @@ let peppers = '🌶'.repeat(spiceLevel)
         </p>
 
         <Modal modalDescription={description} id={data[iterable].id} modalTitle={title} />
-        <button type="button" class="btn btn-danger btn-sm">Add to Cart</button>
+        <button type="button" onClick={addedToCart} class="btn btn-danger btn-sm">{addBtn}</button>
       </div>
       
     </div>
