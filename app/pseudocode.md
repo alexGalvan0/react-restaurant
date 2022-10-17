@@ -11,7 +11,10 @@
 1. Get data on page render and store in state. UseEffect on page load. 
 
 1. get Time from dayjs 
-    -   if before 10 am return 
+    -   if before 12 am return Breakfast
+    - if between 12-6 return lunch
+    - if after 6pm return dinner
+
 
 ## Componenets
 
@@ -42,7 +45,11 @@ for each filtered data
 ```
 ### spice
 ```
-
+for range between 0 and the spice data
+return empji pepper. 
 ```
 
 
+### Idea
+
+![Drakes Menu](./images/drakesMenu.jpg)
