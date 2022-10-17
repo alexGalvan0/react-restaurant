@@ -1,3 +1,4 @@
+import Checkout from "./Checkout";
 export default function Cart() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Cart() {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">
-                Modal title
+                Cart
               </h1>
               <button
                 type="button"
@@ -30,17 +31,21 @@ export default function Cart() {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">...</div>
+            <div className="modal-body">
+
+                <Checkout />
+             
+            </div>
             <div className="modal-footer">
               <button
                 type="button"
-                className="btn btn-secondary"
+                className="btn btn-secondary btn-sm"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
-              <button type="button" className="btn btn-primary">
-                Save changes
+              <button type="button" className="btn btn-sm btn-danger">
+                Check Out
               </button>
             </div>
           </div>

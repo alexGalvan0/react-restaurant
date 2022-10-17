@@ -6,9 +6,9 @@ function Card({ title, description, price, category,data,iterable }) {
 let spiceLevel = data[iterable].spicy_level
 let peppers = '🌶'.repeat(spiceLevel)
 
-let [addBtn, setAddBtn] = useState(false)
+let [addBtn, setAddBtn] = useState('Add to cart')
 let addedToCart = () =>{
-  setAddBtn(addBtn => !addBtn)
+  setAddBtn(addBtn=='Add to cart' ? 'Remove From Cart' : 'Add to cart')
 }
 
 
