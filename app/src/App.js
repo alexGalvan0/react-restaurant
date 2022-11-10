@@ -14,6 +14,8 @@ export default function App() {
   const [data, setData] = useState([]);
   const [type, setType] = useState("");
 
+  const url2 =
+    "https://8000-alexgalvan0-bistrobacke-mwyv0ksbd66.ws-us75.gitpod.io/api/json/";
   const url = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
 
   useEffect(() => {
@@ -26,11 +28,10 @@ export default function App() {
       setType("Dinner");
     }
 
-    axios.get(url).then((resp) => {
+    axios.get(url2).then((resp) => {
       setData(resp.data);
     });
   }, []);
-
   const filteredMenu = data.filter((item) => {
     return item.category.title === type;
   });
