@@ -1,10 +1,8 @@
 import Modal from "./Modal";
 
-
-function Card({ title, description, price, category, data, iterable, }) {
+function Card({ title, description, price, category, data, iterable }) {
   let spiceLevel = data[iterable].spicy_level;
   let peppers = "🌶".repeat(spiceLevel);
-
 
   return (
     <div className="card col-4 " style={{ width: "18rem" }}>

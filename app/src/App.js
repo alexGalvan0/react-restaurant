@@ -15,7 +15,7 @@ export default function App() {
   const [type, setType] = useState("");
 
   const url2 =
-    "https://8000-alexgalvan0-bistrobacke-mwyv0ksbd66.ws-us75.gitpod.io/api/json/";
+    "https://8000-alexgalvan0-bistrobacke-mwyv0ksbd66.ws-us75.gitpod.io/api/json/0";
   const url = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
 
   useEffect(() => {
